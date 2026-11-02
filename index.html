@@ -1,0 +1,481 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aisha ❤️ | Special Surprise</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background:
+                linear-gradient(rgba(40, 0, 35, 0.55), rgba(40, 0, 35, 0.70)),
+                url("./Aisha.jpeg") center center / cover fixed no-repeat;
+            min-height: 100vh;
+            color: #54234d;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 650px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.94);
+            padding: 30px 22px;
+            border-radius: 25px;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.30);
+        }
+
+        .crown {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: #d63384;
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #8e44ad;
+            font-size: 17px;
+            margin-bottom: 25px;
+        }
+
+        .announcement {
+            background: linear-gradient(135deg, #ffe0f0, #eee0ff);
+            padding: 20px;
+            border-radius: 18px;
+            margin: 20px 0;
+            line-height: 1.8;
+        }
+
+        .announcement h2 {
+            color: #c21875;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            background: #fff0f7;
+            padding: 20px;
+            border-radius: 18px;
+            margin-top: 22px;
+            line-height: 1.8;
+        }
+
+        .section h3 {
+            color: #c21875;
+            margin-bottom: 12px;
+        }
+
+        .funny-list {
+            list-style: none;
+            text-align: left;
+            line-height: 2;
+            padding: 5px;
+        }
+
+        .music-section {
+            margin-top: 22px;
+            padding: 20px;
+            background: #f5e9ff;
+            border-radius: 18px;
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 12px;
+        }
+
+        button {
+            background: linear-gradient(135deg, #e84393, #9b59b6);
+            color: white;
+            border: none;
+            padding: 14px 22px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.04);
+            box-shadow: 0 5px 15px rgba(180, 50, 130, 0.3);
+        }
+
+        .message {
+            display: none;
+            background: linear-gradient(135deg, #ffe0f0, #eee0ff);
+            padding: 25px 20px;
+            border-radius: 18px;
+            margin-top: 22px;
+            text-align: left;
+            line-height: 1.8;
+            animation: appear 0.7s ease;
+        }
+
+        .message h3 {
+            color: #c21875;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .surprise-text,
+        .question {
+            text-align: center;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+
+        .question {
+            margin-top: 25px;
+        }
+
+        .choice-area {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #e5a9ce;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 13px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #efa2cb;
+            border-radius: 12px;
+            font-size: 16px;
+            font-family: inherit;
+            outline: none;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #c21875;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        #result {
+            text-align: center;
+            margin-top: 12px;
+            color: #8e44ad;
+            font-weight: bold;
+        }
+
+        .surprise-footer {
+            text-align: center;
+            margin-top: 25px;
+            color: #75416c;
+            font-size: 14px;
+        }
+
+        footer {
+            margin-top: 25px;
+            color: #75416c;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 23px 15px;
+            }
+
+            h1 {
+                font-size: 29px;
+            }
+
+            .subtitle {
+                font-size: 15px;
+            }
+
+            .surprise-text,
+            .question {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="crown">👑</div>
+
+        <h1>Aisha ❤️</h1>
+
+        <p class="subtitle">
+            Officially the CEO of Smiles 😂
+        </p>
+
+        <!-- ANNOUNCEMENT -->
+
+        <div class="announcement">
+            <h2>📢 SPECIAL ANNOUNCEMENT!</h2>
+
+            <p>
+                Dear Madam Aisha, it has come to our notice that
+                your smile has been causing unexpected happiness
+                around people. 😂😂
+            </p>
+
+            <p>
+                We kindly request that you continue spreading happiness.
+            </p>
+
+            <p>
+                Signed: The Department of Happiness ❤️
+            </p>
+        </div>
+
+        <!-- MUSIC -->
+
+        <div class="music-section">
+            <h3>🎵 A Little Music for You</h3>
+
+            <p>Because this website needs a soundtrack! 😂</p>
+
+            <audio controls loop>
+                <source src="./limami.mp3" type="audio/mpeg">
+                Your browser does not support audio playback.
+            </audio>
+        </div>
+
+        <!-- FUNNY AWARDS -->
+
+        <div class="section">
+            <h3>😂 Official Aisha Awards</h3>
+
+            <ul class="funny-list">
+                <li>🏆 Professional smile distributor</li>
+                <li>😂 CEO of saying "Ameen"</li>
+                <li>🤭 Minister of keeping people waiting</li>
+                <li>⭐ Certified owner of good vibes</li>
+                <li>👑 Queen of unpredictable behaviour</li>
+            </ul>
+        </div>
+
+        <!-- MUHAMMAD ANWAR 2.0 -->
+
+        <div class="section">
+            <h3>🚀 Introducing Muhammad Anwar 2.0</h3>
+
+            <p>A new version has arrived! 😂</p>
+
+            <p>
+                Improved features, updated personality,
+                better communication and a few bugs
+                that still need fixing. 😭
+            </p>
+
+            <p>
+                But there is one important problem...
+                This new version has no official name yet!
+            </p>
+        </div>
+
+        <!-- SURPRISE BUTTON -->
+
+        <button onclick="openSurprise()">
+            🎁 Open Your Surprise
+        </button>
+
+        <!-- SURPRISE CONTENT -->
+
+        <div class="message" id="surprise">
+
+            <h3>Surprise! ❤️🎉</h3>
+
+            <div class="surprise-text">
+                <p>
+                    Aisha, I just want you to know that you deserve
+                    happiness, peace and beautiful moments.
+                    Keep smiling because your happiness matters. 😂❤️
+                </p>
+            </div>
+
+            <div class="question">
+                <h3>One small question...</h3>
+
+                <p>
+                    Have you finally decided which nickname suits me? 😂
+                </p>
+
+                <p>
+                    <strong>I'm still waiting ooo! 😭</strong>
+                </p>
+            </div>
+
+            <!-- AISHA CHOOSES HER OWN NAME -->
+
+            <div class="choice-area">
+
+                <h3>😂 Madam Aisha, The Choice Is Yours!</h3>
+
+                <p>
+                    What nickname have you chosen for Muhammad Anwar 2.0?
+                    You have complete freedom to choose any name you like.
+                    No suggestions, no restrictions. 😂
+                </p>
+
+                <input
+                    type="text"
+                    id="nickname"
+                    placeholder="Write your chosen nickname..."
+                    maxlength="60"
+                >
+
+                <p>Now write your own personal message:</p>
+
+                <textarea
+                    id="herMessage"
+                    placeholder="Write anything you want to tell me..."
+                    rows="5"
+                ></textarea>
+
+                <button onclick="sendDecision()">
+                    📲 Send Your Decision
+                </button>
+
+                <p id="result"></p>
+
+            </div>
+
+            <div class="surprise-footer">
+                Made with good vibes and a little humour ❤️
+                <br>
+                Specially for Aisha.
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+
+        <footer>
+            <p>Designed &amp; Developed by</p>
+            <strong>Muhammad Anwar Idris</strong>
+            <p>© 2026 All Rights Reserved</p>
+        </footer>
+
+    </div>
+
+    <!-- ALL JAVASCRIPT IS INCLUDED IN THIS SAME FILE -->
+
+    <script>
+
+        // OPEN THE SURPRISE
+
+        function openSurprise() {
+
+            const surprise = document.getElementById("surprise");
+
+            surprise.style.display = "block";
+
+            surprise.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+
+            createHearts();
+        }
+
+
+        // SEND HER CHOSEN NAME AND PERSONAL MESSAGE TO WHATSAPP
+
+        function sendDecision() {
+
+            const nickname = document
+                .getElementById("nickname")
+                .value.trim();
+
+            const herMessage = document
+                .getElementById("herMessage")
+                .value.trim();
+
+            const result = document.getElementById("result");
+
+            if (!nickname || !herMessage) {
+
+                result.textContent =
+                    "😂 Madam Aisha, please fill in both boxes first!";
+
+                return;
+            }
+
+            const phone = "2349062190613";
+
+            const message =
+                "My chosen nickname for Muhammad Anwar 2.0 is: " +
+                nickname +
+                "\n\nMy personal message:\n" +
+                herMessage;
+
+            const whatsappURL =
+                "https://wa.me/" +
+                phone +
+                "?text=" +
+                encodeURIComponent(message);
+
+            window.open(whatsappURL, "_blank");
+        }
+
+
+        // HEART ANIMATION
+
+        function createHearts() {
+
+            const symbols = ["❤️", "💗", "💕", "💖"];
+
+            for (let i = 0; i < 12; i++) {
+
+                const heart = document.createElement("div");
+
+                heart.textContent =
+                    symbols[Math.floor(Math.random() * symbols.length)];
+
+                heart.style.position = "fixed";
+                heart.style.left = Math.random() * 100 + "vw";
+                heart.style.top = Math.random() * 80 + "vh";
+                heart.style.fontSize = "24px";
+                heart.style.pointerEvents = "none";
+                heart.style.zIndex = "9999";
+
+                document.body.appendChild(heart);
+
+                setTimeout(function () {
+                    heart.remove();
+                }, 1800);
+            }
+        }
+
+    </script>
+
+</body>
+</html>
